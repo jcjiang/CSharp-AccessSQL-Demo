@@ -17,9 +17,6 @@ This sample draws heavily from this tutorial for [Getting Started with EF Core w
 2. In the root directory, run the code reflecting instruction after that run the command ```dotnet build```
 3. After the solution is built, you can use Visual Studio to debug and run the project. Make sure the project path files are located in the solution.
 
-### Usage
-1. Use the context in the project to access the entities as an object and perform CRUD operation as you please. e.g context.People.Add() or context.People.Update()
-
 ### Contribution
 
 If you wish to contribute, you can submit pull requests with updates your implementation 
