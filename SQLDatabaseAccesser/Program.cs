@@ -7,4 +7,5 @@ using var db = new BloggingContext();
 Console.WriteLine("Querying for a blog");
 var blog = db.Blogs
     .First();
+
 Console.WriteLine(blog.Url);
