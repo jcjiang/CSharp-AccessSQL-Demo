@@ -11,7 +11,7 @@ internal class ADOSQLAccess
         using SqlCommand cmd = conn.CreateCommand();
         
         cmd.Connection = conn;
-        cmd.CommandText = "SELECT * FROM BlogId";
+        cmd.CommandText = "SELECT * FROM Blogs";
 
         using SqlDataReader dataReader = cmd.ExecuteReader();
 
