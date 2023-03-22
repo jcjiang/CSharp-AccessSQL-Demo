@@ -10,9 +10,9 @@ using var cmd = conn.CreateCommand();
 cmd.Connection = conn;
 cmd.CommandText = "SELECT * FROM Blogs";
 
-using var dataReader = cmd.ExecuteReader();
+using var dataReader = await cmd.ExecuteReaderAsync();
 
-while (dataReader.Read())
+while (await dataReader.ReadAsync())
 {
     Console.WriteLine(dataReader["Url"].ToString());
 }
