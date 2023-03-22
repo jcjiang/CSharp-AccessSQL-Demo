@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "o5Ufz5m53MhJwhZnHKnfXDLX/dNgYAeEjCLoMi2Yp9RxiCs4Lx4Sqh2HyZBArqJrc14MIeN+BADFgQPlevmkHA==",
+  "dgSpecHash": "+E2MJxaGlJ/V0LuREdLzYUOqTqak1gWoMgBItwh1IyU/wO7bSlFQwqZpu8sE00szgHyDMaOkV+sEnUI9cX3Jeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\SQLDatabaseAccesser\\SQLDatabaseAccesser\\EFCoreAccess.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\SQLDatabaseAccesser\\SQLDatabaseAccesser\\EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

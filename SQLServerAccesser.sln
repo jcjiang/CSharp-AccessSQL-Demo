@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreAccess", "SQLDatabaseAccesser\EFCoreAccess.csproj", "{13C0B072-5565-4AFD-9FB3-EA5F4CC6133F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore", "SQLDatabaseAccesser\EFCore.csproj", "{13C0B072-5565-4AFD-9FB3-EA5F4CC6133F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperAccess", "DapperAccess\DapperAccess.csproj", "{4E4550B5-8C72-46EE-A856-5BBC304BE949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperAccess", "DapperAccess\DapperAccess.csproj", "{4E4550B5-8C72-46EE-A856-5BBC304BE949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOAccess", "ADOAccess\ADOAccess.csproj", "{7DA5413D-1E5F-4CE8-8CF3-AFEEA458BBBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADO", "ADOAccess\ADO.csproj", "{7DA5413D-1E5F-4CE8-8CF3-AFEEA458BBBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

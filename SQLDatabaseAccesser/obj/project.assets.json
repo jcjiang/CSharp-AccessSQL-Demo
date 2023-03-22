@@ -46,6 +46,19 @@
           }
         }
       },
+      "Dapper/2.0.123": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1067,6 +1080,24 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Dapper/2.0.123": {
+      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "type": "package",
+      "path": "dapper/2.0.123",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.123.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -3175,6 +3206,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Dapper >= 2.0.123",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4"
     ]
   },
@@ -3184,9 +3216,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\SQLDatabaseAccesser\\SQLDatabaseAccesser\\EFCoreAccess.csproj",
-      "projectName": "EFCoreAccess",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\SQLDatabaseAccesser\\SQLDatabaseAccesser\\EFCoreAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\SQLDatabaseAccesser\\SQLDatabaseAccesser\\EFCore.csproj",
+      "projectName": "EFCore",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\SQLDatabaseAccesser\\SQLDatabaseAccesser\\EFCore.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\source\\repos\\SQLDatabaseAccesser\\SQLDatabaseAccesser\\obj\\",
       "projectStyle": "PackageReference",
@@ -3217,6 +3249,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.123, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.4, )"

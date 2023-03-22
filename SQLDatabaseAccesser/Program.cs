@@ -1,11 +1,10 @@
-﻿using System;
-using System.Linq;
-
-using var db = new BloggingContext();
+﻿using var db = new BloggingContext();
 
 // Read
-Console.WriteLine("Querying for a blog");
-var blog = db.Blogs
-    .First();
+Console.WriteLine("Querying for blogs");
 
-Console.WriteLine(blog.Url);
+foreach (var blog in db.Blogs)
+{
+    Console.WriteLine(blog.Url);
+}
+
