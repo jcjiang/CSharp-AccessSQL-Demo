@@ -15,18 +15,19 @@ This sample draws from this tutorial for [Getting Started with EF Core with SQLi
 
 ### Installation
 1. Clone or download the repository to your local machine.
-2. In the root directory, run the code reflecting instruction after that run the command ```dotnet build```
-3. After the solution is built, you can use Visual Studio to debug and run the project. Make sure the project path files are located in the solution.
+2. Use Visual Studio to debug and run the project. 
 
 ### Create Database 
 
-The file `GenerateSampleDatabase.sql` will generate a SQL Server database in `(localdb)\mssqllocaldb` under the `master` database. 
+The file `GenerateSampleDatabase.sql` will generate a SQL Server database in `(localdb)\mssqllocaldb` under the `master` database and insert a single blog post. The sample code samples depend on having an existing database to connect to and query.
 
 ### Run
 
+Each code sample has the same functionality implemented in a different way. When run, the code will generate a console app that connects to a SQL Server (or Azure SQL database with the appropriate connection string) and queries it for all the blog posts stored. 
+
 ### Contribution
 
-If you wish to contribute, you can submit pull requests with updates. 
+If you wish to contribute, you can submit a pull request. 
 
 Overall, this code is intended to provide a basic understanding of how Entity Framework Core can be used to interact with a SQL database in a C# application, and should not be used as-is in a production environment. Instead, this code should be used as the beginning passage to build your database application.
 
