@@ -7,6 +7,6 @@ using var connection = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Databas
 
 var sql = "SELECT * FROM Blogs";
 
-var results = await connection.QueryAsync<IEnumerable<Blog>>(sql);
+var results = await connection.QueryAsync<Blog>(sql);
 
 Console.WriteLine(results);
