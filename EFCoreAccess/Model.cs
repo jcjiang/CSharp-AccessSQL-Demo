@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 
@@ -9,7 +10,11 @@ public class BloggingContext : DbContext
     // The following configures EF to use SQL Server localdb
     // localdb must be installed first
     protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True;");
+    {
+        options.LogTo(Console.WriteLine); //logs SQL queries to console
+        options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True;");
+    }
+        
 }
 
 public class Blog
