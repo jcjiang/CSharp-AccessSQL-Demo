@@ -8,7 +8,7 @@ await conn.OpenAsync();
 await using var cmd = conn.CreateCommand();
 
 cmd.Connection = conn;
-cmd.CommandText = "SELECT * FROM Blogs WHERE Url = 'http://blogs.msdn.com/adonet' AND BlogId = 1;";
+cmd.CommandText = "SELECT * FROM Blogs WHERE BlogId = 1;";
 
 await using var dataReader = await cmd.ExecuteReaderAsync();
 

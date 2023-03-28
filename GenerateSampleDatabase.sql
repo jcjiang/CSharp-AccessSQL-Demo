@@ -17,5 +17,7 @@ CREATE TABLE [Posts](
 )
 GO
 
+INSERT INTO [Blogs] (Url) VALUES ('https://devblogs.microsoft.com/dotnet/tag/entity-framework-core/');
+INSERT INTO [Blogs] (Url) VALUES ('https://devblogs.microsoft.com/dotnet/category/aspnet/');
 INSERT INTO [Blogs] (Url) VALUES ('http://blogs.msdn.com/adonet');
 GO
