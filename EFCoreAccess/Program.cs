@@ -1,16 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore; //download Microsoft.EntityFrameworkCore.SqlServer
 
 await using var db = new BloggingContext();
 
 // Read
 Console.WriteLine("Querying for blogs");
 
-var queryBlog =
+var results =
     from blog in await db.Blogs.ToListAsync()
-    where blog.Url == blog.BlogId == 1
+    where blog.BlogId == 1
     select blog;
 
-foreach (var s in queryBlog)
+foreach (var s in results)
 {
-    Console.WriteLine(s.Url);
+    Console.WriteLine("Blog id: " + s.BlogId + "Blog URL: " + s.Url);
 }

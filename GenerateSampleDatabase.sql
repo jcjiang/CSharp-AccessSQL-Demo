@@ -1,4 +1,6 @@
 DROP DATABASE IF EXISTS [Blogging];
+GO
+
 CREATE DATABASE [Blogging];
 
 GO

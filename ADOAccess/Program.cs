@@ -2,7 +2,7 @@
 
 Console.WriteLine("Querying for blogs");
 
-await using var conn = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True;");
+await using var conn = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=Blogging;Trusted_Connection=True;");
 
 await conn.OpenAsync();
 await using var cmd = conn.CreateCommand();
@@ -14,5 +14,6 @@ await using var dataReader = await cmd.ExecuteReaderAsync();
 
 while (await dataReader.ReadAsync())
 {
-    Console.WriteLine(dataReader["Url"].ToString());
+    Console.WriteLine(dataReader["BlogId"].ToString());
+    Console.WriteLine(dataReader["Url"].ToString()); //not an object!
 }

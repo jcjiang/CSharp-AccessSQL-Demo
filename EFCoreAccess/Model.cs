@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,8 @@ public class BloggingContext : DbContext
     // localdb must be installed first
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options
-            .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True;")
-            .LogTo(Console.WriteLine); // Logs SQL queries to console
+            .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Blogging;Trusted_Connection=True;")
+            .LogTo(Console.WriteLine, LogLevel.Information); // Logs SQL queries to console
 }
 
 public class Blog
