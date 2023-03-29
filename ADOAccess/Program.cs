@@ -2,17 +2,13 @@
 
 Console.WriteLine("Querying for blogs");
 
-await using var conn = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True;");
-
+await using var conn = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True");
 await conn.OpenAsync();
-await using var cmd = conn.CreateCommand();
 
-cmd.Connection = conn;
-cmd.CommandText = "SELECT * FROM Blogs WHERE BlogId = 1;";
-
+await using var cmd = new SqlCommand("SELECT * FROM Blogs WHERE BlogId = 1", conn);
 await using var dataReader = await cmd.ExecuteReaderAsync();
 
 while (await dataReader.ReadAsync())
 {
-    Console.WriteLine(dataReader["Url"].ToString());
+    Console.WriteLine(dataReader["Url"]);
 }

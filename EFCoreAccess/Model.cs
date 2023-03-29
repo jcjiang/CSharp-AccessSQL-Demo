@@ -11,7 +11,7 @@ public class BloggingContext : DbContext
     // localdb must be installed first
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options
-            .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True;")
+            .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=master;Trusted_Connection=True")
             .LogTo(Console.WriteLine); // Logs SQL queries to console
 }
 
