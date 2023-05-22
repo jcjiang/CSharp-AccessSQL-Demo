@@ -1,4 +1,4 @@
-# Get Started with Databases and Data Access using C #
+# Get Started with Databases and Data Access using C Sharp
 
 This repository contains sample projects for getting started with C# for working with data and managing databases.
 
@@ -25,7 +25,7 @@ There are several ways to access databases by writing C# code and using the .NET
 
 C# can be used to work with a large number of databases, including but not limited to:
 
-- SQL Server
+- sSQL Server
 - Azure SQL
 - SQLite
 - PostgreSQL
