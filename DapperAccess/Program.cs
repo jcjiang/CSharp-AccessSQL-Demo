@@ -11,5 +11,5 @@ var results = await connection.QueryAsync<Blog>(sql);
 
 foreach (var s in results)
 {
-    Console.WriteLine("Blog id: " + s.BlogId + "Blog URL: " + s.Url);
+    Console.WriteLine("Blog id: " + s.BlogId + " Blog URL: " + s.Url);
 }
