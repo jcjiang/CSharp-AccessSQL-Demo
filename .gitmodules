@@ -1,0 +1,3 @@
+[submodule "CSharp-Access-SQLite"]
+	path = CSharp-Access-SQLite
+	url = https://github.com/jcjiang/CSharp-Access-SQLite
